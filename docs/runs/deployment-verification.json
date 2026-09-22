@@ -1,0 +1,14 @@
+{
+  "recorded_at": "2026-09-22T02:18:56.114937+00:00",
+  "status": "passed",
+  "checks": [
+    "stdio MCP from another working directory",
+    "HTTP MCP initialization and tools",
+    "eight expected tools",
+    "structured errors",
+    "HTTP bearer authentication",
+    "artifact endpoint authentication",
+    "ffmpeg and ffprobe available"
+  ],
+  "scope": "Local deployment; target ChatGPT account and remote gateway not tested"
+}

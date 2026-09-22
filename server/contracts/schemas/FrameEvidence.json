@@ -1,0 +1,74 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "frame_id": {
+      "title": "Frame Id",
+      "type": "string"
+    },
+    "timestamp_ms": {
+      "minimum": 0,
+      "title": "Timestamp Ms",
+      "type": "integer"
+    },
+    "artifact_id": {
+      "title": "Artifact Id",
+      "type": "string"
+    },
+    "selection_reason": {
+      "title": "Selection Reason",
+      "type": "string"
+    },
+    "width": {
+      "exclusiveMinimum": 0,
+      "title": "Width",
+      "type": "integer"
+    },
+    "height": {
+      "exclusiveMinimum": 0,
+      "title": "Height",
+      "type": "integer"
+    },
+    "asset_revision": {
+      "default": "r1",
+      "title": "Asset Revision",
+      "type": "string"
+    },
+    "source_locator": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Locator"
+    },
+    "image_content_index": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Image Content Index"
+    }
+  },
+  "required": [
+    "frame_id",
+    "timestamp_ms",
+    "artifact_id",
+    "selection_reason",
+    "width",
+    "height"
+  ],
+  "title": "FrameEvidence",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://video-ingest.invalid/schemas/1.0/FrameEvidence.json"
+}

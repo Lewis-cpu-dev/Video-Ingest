@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "scope": "Official Codex compatibility manifest validator; no host installation performed",
+  "source": "https://raw.githubusercontent.com/openai/codex/main/codex-rs/skills/src/assets/samples/plugin-creator/scripts/validate_plugin.py",
+  "validator_sha256": "f4eeadb733b28b0c3e714de263a76d6542866a672f3e99bdffcf4dbcdf85e944",
+  "identifier_validator_sha256": "a6d51ce4a9a7e8f85626ff5808a467a67574e7f8cdf1167ffb467c5f67e57223",
+  "manifest_sha256": "6307c529274da1ff151f00690335846932cb55ab9f97c74723d9f05120ba0503",
+  "mcp_configuration_sha256": "199209d2132bed7e8468c4342ae6788ef9191ea92c04c19cc9cd87603337a989"
+}

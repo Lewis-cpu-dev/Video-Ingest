@@ -1,0 +1,49 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "default": "unverified",
+      "title": "Name",
+      "type": "string"
+    },
+    "text": {
+      "default": true,
+      "title": "Text",
+      "type": "boolean"
+    },
+    "images": {
+      "default": true,
+      "title": "Images",
+      "type": "boolean"
+    },
+    "file_resources": {
+      "default": false,
+      "title": "File Resources",
+      "type": "boolean"
+    },
+    "native_audio": {
+      "default": false,
+      "title": "Native Audio",
+      "type": "boolean"
+    },
+    "native_video": {
+      "default": false,
+      "title": "Native Video",
+      "type": "boolean"
+    },
+    "verification": {
+      "default": "unverified",
+      "enum": [
+        "unverified",
+        "local_protocol",
+        "host_verified"
+      ],
+      "title": "Verification",
+      "type": "string"
+    }
+  },
+  "title": "ClientProfile",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://video-ingest.invalid/schemas/1.0/ClientProfile.json"
+}

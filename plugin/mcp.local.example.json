@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "video-ingest": {
+      "command": "/absolute/path/to/Video-Ingest/.venv/bin/python",
+      "args": ["/absolute/path/to/Video-Ingest/scripts/run_server.py"],
+      "cwd": "/absolute/path/to/Video-Ingest"
+    }
+  }
+}

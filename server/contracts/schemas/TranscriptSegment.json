@@ -1,0 +1,66 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "segment_id": {
+      "title": "Segment Id",
+      "type": "string"
+    },
+    "start_ms": {
+      "minimum": 0,
+      "title": "Start Ms",
+      "type": "integer"
+    },
+    "end_ms": {
+      "minimum": 0,
+      "title": "End Ms",
+      "type": "integer"
+    },
+    "text": {
+      "title": "Text",
+      "type": "string"
+    },
+    "language": {
+      "title": "Language",
+      "type": "string"
+    },
+    "provenance": {
+      "enum": [
+        "human_caption",
+        "platform_auto_caption",
+        "asr",
+        "unknown_caption"
+      ],
+      "title": "Provenance",
+      "type": "string"
+    },
+    "artifact_id": {
+      "default": "",
+      "title": "Artifact Id",
+      "type": "string"
+    },
+    "source_locator": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Locator"
+    }
+  },
+  "required": [
+    "segment_id",
+    "start_ms",
+    "end_ms",
+    "text",
+    "language",
+    "provenance"
+  ],
+  "title": "TranscriptSegment",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://video-ingest.invalid/schemas/1.0/TranscriptSegment.json"
+}

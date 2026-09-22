@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-09-21T23:34:23.582888+00:00",
+  "status": "passed",
+  "scope": "Local fixture acceptance only; not target-host or real-platform ASR acceptance",
+  "model": "Systran/faster-whisper-tiny.en",
+  "model_revision": "0d3d19a32d3338f10357c0889762bd8d64bbdeba",
+  "test_command": ".venv/bin/pytest tests/test_processing.py tests/test_providers.py tests/test_asr_integration.py --basetemp=.tmp/pytest-media -q",
+  "result": "39 passed in 7.80s",
+  "actual_asr_cases": {
+    "test_real_vad_restores_leading_silence_and_supplied_offset": "Four seconds of initial silence plus 12000ms supplied source offset; first detected speech within1000ms of16000ms. Actual tiny.en CPU inference.",
+    "test_real_no_caption_service_chain": "Local generated video with speech and no captions, prepare(transcript) -> persisted job -> read_transcript; real FFmpeg and ASR, only media platform acquisition injected; source speech onset within1000ms of4000ms.",
+    "test_english_only_model_rejects_unsupported_language": "zh-CN request against provisioned English-only model returns LANGUAGE_UNSUPPORTED.",
+    "test_real_silence_has_no_invented_words": "Actual three-second silent WAV produces no segments."
+  },
+  "limitations": [
+    "This single English synthetic voice smoke does not establish multilingual quality or word error rate.",
+    "VAD timestamp restoration verified on initial silence fixture; not an exhaustive timing benchmark."
+  ]
+}

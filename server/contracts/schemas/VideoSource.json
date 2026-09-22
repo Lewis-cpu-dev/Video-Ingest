@@ -1,0 +1,47 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "platform": {
+      "enum": [
+        "youtube",
+        "bilibili"
+      ],
+      "title": "Platform",
+      "type": "string"
+    },
+    "canonical_url": {
+      "title": "Canonical Url",
+      "type": "string"
+    },
+    "source_id": {
+      "title": "Source Id",
+      "type": "string"
+    },
+    "part_id": {
+      "default": "1",
+      "title": "Part Id",
+      "type": "string"
+    },
+    "focus_timestamp_ms": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Focus Timestamp Ms"
+    }
+  },
+  "required": [
+    "platform",
+    "canonical_url",
+    "source_id"
+  ],
+  "title": "VideoSource",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://video-ingest.invalid/schemas/1.0/VideoSource.json"
+}

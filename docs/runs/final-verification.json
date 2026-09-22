@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-09-22T02:20:08.727871+00:00",
+  "status": "passed",
+  "pytest": {
+    "tests": 179,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "pytest_command": ".venv/bin/pytest -q --basetemp=.tmp/pytest-upload --junitxml=docs/runs/pytest.xml",
+  "ruff": "passed",
+  "deployment_stdio": "passed",
+  "deployment_authenticated_http": "passed",
+  "source_tree_sha256": "93a95adca19725038a8108c99fbb63b2156701be4eaa80ff303867d700d03c4c",
+  "files_hashed": 68,
+  "scope": "Local implementation and deployment verification; target ChatGPT host acceptance pending"
+}

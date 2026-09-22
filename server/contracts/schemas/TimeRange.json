@@ -1,0 +1,23 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "start_ms": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Start Ms",
+      "type": "integer"
+    },
+    "end_ms": {
+      "exclusiveMinimum": 0,
+      "title": "End Ms",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "end_ms"
+  ],
+  "title": "TimeRange",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://video-ingest.invalid/schemas/1.0/TimeRange.json"
+}

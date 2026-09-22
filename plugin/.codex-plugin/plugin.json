@@ -1,0 +1,24 @@
+{
+  "name": "video-ingest",
+  "version": "0.1.0",
+  "description": "Private YouTube and Bilibili video evidence ingestion workflow",
+  "author": {
+    "name": "Video Ingest"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Video Ingest",
+    "shortDescription": "Read timed video evidence in private workflows",
+    "longDescription": "Retrieve YouTube and Bilibili captions, local transcriptions and original video frames for evidence-based analysis. Private backend required.",
+    "developerName": "Video Ingest",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Read this video using timestamped transcript and image evidence."
+    ]
+  }
+}

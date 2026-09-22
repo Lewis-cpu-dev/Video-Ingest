@@ -1,0 +1,30 @@
+{
+  "fixture": "local FFmpeg flite synthesized speech with 2000ms leading silence",
+  "expected_text": "This is a local video ingestion test. The purple triangle is beside the green square. The number is forty two.",
+  "source_sha256": "da69b7a3594730935a28256245e62449d2eaad4975bd59eb1b8888fb4738cac7",
+  "source_duration_ms": 8780,
+  "model": "Systran/faster-whisper-tiny.en",
+  "model_revision": "0d3d19a32d3338f10357c0889762bd8d64bbdeba",
+  "source_offset_ms": 2000,
+  "network": "model explicitly provisioned; inference worker forbids network",
+  "status": "passed",
+  "segments": [
+    {
+      "segment_id": "asr_000000",
+      "start_ms": 2000,
+      "end_ms": 9000,
+      "text": "This is a local video ingestion test, the purple triangle is beside the green square, the number is 42.",
+      "language": "en",
+      "provenance": "asr",
+      "artifact_id": "",
+      "source_locator": null
+    }
+  ],
+  "checks": {
+    "speech_present": true,
+    "purple_triangle": true,
+    "green_square": true,
+    "source_offset_preserved": true
+  },
+  "elapsed_seconds": 1.0
+}

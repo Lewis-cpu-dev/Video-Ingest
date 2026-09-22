@@ -1,0 +1,187 @@
+{
+  "$defs": {
+    "FrameEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "frame_id": {
+          "title": "Frame Id",
+          "type": "string"
+        },
+        "timestamp_ms": {
+          "minimum": 0,
+          "title": "Timestamp Ms",
+          "type": "integer"
+        },
+        "artifact_id": {
+          "title": "Artifact Id",
+          "type": "string"
+        },
+        "selection_reason": {
+          "title": "Selection Reason",
+          "type": "string"
+        },
+        "width": {
+          "exclusiveMinimum": 0,
+          "title": "Width",
+          "type": "integer"
+        },
+        "height": {
+          "exclusiveMinimum": 0,
+          "title": "Height",
+          "type": "integer"
+        },
+        "asset_revision": {
+          "default": "r1",
+          "title": "Asset Revision",
+          "type": "string"
+        },
+        "source_locator": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Locator"
+        },
+        "image_content_index": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Image Content Index"
+        }
+      },
+      "required": [
+        "frame_id",
+        "timestamp_ms",
+        "artifact_id",
+        "selection_reason",
+        "width",
+        "height"
+      ],
+      "title": "FrameEvidence",
+      "type": "object"
+    },
+    "TranscriptSegment": {
+      "additionalProperties": false,
+      "properties": {
+        "segment_id": {
+          "title": "Segment Id",
+          "type": "string"
+        },
+        "start_ms": {
+          "minimum": 0,
+          "title": "Start Ms",
+          "type": "integer"
+        },
+        "end_ms": {
+          "minimum": 0,
+          "title": "End Ms",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "language": {
+          "title": "Language",
+          "type": "string"
+        },
+        "provenance": {
+          "enum": [
+            "human_caption",
+            "platform_auto_caption",
+            "asr",
+            "unknown_caption"
+          ],
+          "title": "Provenance",
+          "type": "string"
+        },
+        "artifact_id": {
+          "default": "",
+          "title": "Artifact Id",
+          "type": "string"
+        },
+        "source_locator": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Locator"
+        }
+      },
+      "required": [
+        "segment_id",
+        "start_ms",
+        "end_ms",
+        "text",
+        "language",
+        "provenance"
+      ],
+      "title": "TranscriptSegment",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "asset_id": {
+      "title": "Asset Id",
+      "type": "string"
+    },
+    "asset_revision": {
+      "title": "Asset Revision",
+      "type": "string"
+    },
+    "timebase": {
+      "const": "source_presentation_ms",
+      "default": "source_presentation_ms",
+      "title": "Timebase",
+      "type": "string"
+    },
+    "transcript": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TranscriptSegment"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "frame": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/FrameEvidence"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "asset_id",
+    "asset_revision"
+  ],
+  "title": "Evidence",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://video-ingest.invalid/schemas/1.0/Evidence.json"
+}

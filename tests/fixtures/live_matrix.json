@@ -1,0 +1,234 @@
+{
+  "status": "not_frozen",
+  "note": "20 slots; 3 URLs have observed attempts,17 need authorized fixed samples and expected content. Earlier failures are preserved; host consumption remains untested.",
+  "samples": [
+    {
+      "id": "YT-01",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=BaW_jenozKc",
+      "enabled": false,
+      "permission_basis": "explicit development lead bounded public-platform test",
+      "case": "upstream_public_regression",
+      "status": "no_content_evidence",
+      "expected_modalities": [],
+      "source_version": null,
+      "observed_runs": [
+        "docs/runs/youtube-smoke.json"
+      ]
+    },
+    {
+      "id": "YT-02",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=YE7VzlLtp-4",
+      "enabled": false,
+      "permission_basis": "explicit development lead bounded public-platform test",
+      "case": "upstream_public_regression",
+      "status": "requested_backend_steps_passed",
+      "expected_modalities": [],
+      "source_version": null,
+      "observed_runs": [
+        "docs/runs/youtube-blender-smoke.json",
+        "docs/runs/youtube-blender-64mib-smoke.json"
+      ]
+    },
+    {
+      "id": "YT-03",
+      "platform": "youtube",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "no_captions_asr",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "YT-04",
+      "platform": "youtube",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "silent_visual_digits",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "YT-05",
+      "platform": "youtube",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "table_missing_from_captions",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "YT-06",
+      "platform": "youtube",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "short_visual_event",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "YT-07",
+      "platform": "youtube",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "url_variant_or_multipart",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "YT-08",
+      "platform": "youtube",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "bilingual_silence",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "YT-09",
+      "platform": "youtube",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "long_pagination",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "YT-10",
+      "platform": "youtube",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "local_reinspection",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "BI-01",
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1eZdzBGEvE",
+      "enabled": false,
+      "permission_basis": "user plan regression sample",
+      "case": "user_regression",
+      "status": "partial_backend_smoke",
+      "expected_modalities": [],
+      "source_version": null,
+      "observed_run": "docs/runs/bilibili-smoke.json"
+    },
+    {
+      "id": "BI-02",
+      "platform": "bilibili",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "auto_captions",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "BI-03",
+      "platform": "bilibili",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "no_captions_asr",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "BI-04",
+      "platform": "bilibili",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "silent_visual_digits",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "BI-05",
+      "platform": "bilibili",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "table_missing_from_captions",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "BI-06",
+      "platform": "bilibili",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "short_visual_event",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "BI-07",
+      "platform": "bilibili",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "url_variant_or_multipart",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "BI-08",
+      "platform": "bilibili",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "bilingual_silence",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "BI-09",
+      "platform": "bilibili",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "long_pagination",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    },
+    {
+      "id": "BI-10",
+      "platform": "bilibili",
+      "url": null,
+      "enabled": false,
+      "permission_basis": null,
+      "case": "local_reinspection",
+      "status": "pending",
+      "expected_modalities": [],
+      "source_version": null
+    }
+  ]
+}

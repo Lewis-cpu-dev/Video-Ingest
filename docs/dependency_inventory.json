@@ -1,0 +1,723 @@
+[
+  {
+    "name": "annotated-types",
+    "version": "0.8.0",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/annotated_types-0.8.0.dist-info__licenses__LICENSE",
+        "sha256": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
+      }
+    ]
+  },
+  {
+    "name": "anyio",
+    "version": "4.15.1",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/anyio-4.15.1.dist-info__licenses__LICENSE",
+        "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+      }
+    ]
+  },
+  {
+    "name": "attrs",
+    "version": "26.1.0",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/attrs-26.1.0.dist-info__licenses__LICENSE",
+        "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+      }
+    ]
+  },
+  {
+    "name": "av",
+    "version": "18.1.0",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/av-18.1.0.dist-info__licenses__LICENSE.txt",
+        "sha256": "76af0461ffb92e19f1c14449e95557d83a2dfaa1baf202d49e5f1d8746c0da19"
+      }
+    ]
+  },
+  {
+    "name": "brotli",
+    "version": "1.2.0",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/brotli-1.2.0.dist-info__licenses__LICENSE",
+        "sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94"
+      }
+    ]
+  },
+  {
+    "name": "certifi",
+    "version": "2026.7.22",
+    "license": "MPL-2.0",
+    "license_files": [
+      {
+        "file": "docs/licenses/certifi-2026.7.22.dist-info__licenses__LICENSE",
+        "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+      }
+    ]
+  },
+  {
+    "name": "cffi",
+    "version": "2.1.1",
+    "license": "MIT-0",
+    "license_files": [
+      {
+        "file": "docs/licenses/cffi-2.1.1.dist-info__licenses__LICENSE",
+        "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+      }
+    ]
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.1",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/charset_normalizer-3.5.1.dist-info__licenses__LICENSE",
+        "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887"
+      }
+    ]
+  },
+  {
+    "name": "click",
+    "version": "8.5.0",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/click-8.5.0.dist-info__licenses__LICENSE.txt",
+        "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+      }
+    ]
+  },
+  {
+    "name": "cryptography",
+    "version": "50.0.1",
+    "license": "Apache-2.0 OR BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/cryptography-50.0.1.dist-info__licenses__LICENSE",
+        "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb"
+      },
+      {
+        "file": "docs/licenses/cryptography-50.0.1.dist-info__licenses__LICENSE.BSD",
+        "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb"
+      },
+      {
+        "file": "docs/licenses/cryptography-50.0.1.dist-info__licenses__LICENSE.APACHE",
+        "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
+      }
+    ]
+  },
+  {
+    "name": "ctranslate2",
+    "version": "4.8.2",
+    "license": "MIT",
+    "license_files": []
+  },
+  {
+    "name": "faster-whisper",
+    "version": "1.2.1",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/faster_whisper-1.2.1.dist-info__LICENSE",
+        "sha256": "af6798135e729f8aa6c853936d037dfdea449734d26b8ea6a89805fca758c0d5"
+      }
+    ]
+  },
+  {
+    "name": "filelock",
+    "version": "4.0.1",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/filelock-4.0.1.dist-info__licenses__LICENSE",
+        "sha256": "608c89d5060ae9921adccf3236695bc654a9946e12323ef6c021dfa04e294d48"
+      }
+    ]
+  },
+  {
+    "name": "flatbuffers",
+    "version": "25.12.19",
+    "license": "Apache 2.0",
+    "license_files": []
+  },
+  {
+    "name": "fsspec",
+    "version": "2026.9.0",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/fsspec-2026.9.0.dist-info__licenses__LICENSE",
+        "sha256": "2dc35496ce53a7307915c008a844aad53e772b49b34cdd00445067691407ec94"
+      }
+    ]
+  },
+  {
+    "name": "h11",
+    "version": "0.16.0",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/h11-0.16.0.dist-info__licenses__LICENSE.txt",
+        "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+      }
+    ]
+  },
+  {
+    "name": "hf-xet",
+    "version": "1.6.0",
+    "license": "Apache-2.0",
+    "license_files": [
+      {
+        "file": "docs/licenses/hf_xet-1.6.0.dist-info__licenses__LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      }
+    ]
+  },
+  {
+    "name": "httpcore",
+    "version": "1.0.9",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/httpcore-1.0.9.dist-info__licenses__LICENSE.md",
+        "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
+      }
+    ]
+  },
+  {
+    "name": "httpx",
+    "version": "0.28.1",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/httpx-0.28.1.dist-info__licenses__LICENSE.md",
+        "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+      }
+    ]
+  },
+  {
+    "name": "httpx-sse",
+    "version": "0.4.3",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/httpx_sse-0.4.3.dist-info__licenses__LICENSE",
+        "sha256": "beec67e4ee83a7af26f242bed9987aa863d6d2dfb776106aa2360c4187f31901"
+      }
+    ]
+  },
+  {
+    "name": "huggingface_hub",
+    "version": "1.32.0",
+    "license": "Apache-2.0",
+    "license_files": [
+      {
+        "file": "docs/licenses/huggingface_hub-1.32.0.dist-info__licenses__LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      }
+    ]
+  },
+  {
+    "name": "idna",
+    "version": "3.20",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/idna-3.20.dist-info__licenses__LICENSE.md",
+        "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+      }
+    ]
+  },
+  {
+    "name": "iniconfig",
+    "version": "2.3.0",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/iniconfig-2.3.0.dist-info__licenses__LICENSE",
+        "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+      }
+    ]
+  },
+  {
+    "name": "jsonschema",
+    "version": "4.26.0",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/jsonschema-4.26.0.dist-info__licenses__COPYING",
+        "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439"
+      }
+    ]
+  },
+  {
+    "name": "jsonschema-specifications",
+    "version": "2025.9.1",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/jsonschema_specifications-2025.9.1.dist-info__licenses__COPYING",
+        "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+      }
+    ]
+  },
+  {
+    "name": "mcp",
+    "version": "1.30.0",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/mcp-1.30.0.dist-info__licenses__LICENSE",
+        "sha256": "5e13dbbc1d120fc2a03cecde7c91424ae2d7de11b63d58ded2f4431e261ee50d"
+      }
+    ]
+  },
+  {
+    "name": "mutagen",
+    "version": "1.48.1",
+    "license": "GPL-2.0-or-later",
+    "license_files": [
+      {
+        "file": "docs/licenses/mutagen-1.48.1.dist-info__licenses__COPYING",
+        "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+      }
+    ]
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.3",
+    "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+    "license_files": [
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__LICENSE.txt",
+        "sha256": "4860083caa0de2ac3292ca98bd074bd8f45d8b32624e37b1e70a240bff61e488"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy__random__LICENSE.md",
+        "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy__ma__LICENSE",
+        "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy__linalg__lapack_lite__LICENSE.txt",
+        "sha256": "a14cc25e10d40a3aa705b7de2fb764a6535d8ee9b2db4e1724900585457dfd55"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy___core__src__multiarray__dragon4_LICENSE.txt",
+        "sha256": "f7b14309e5f54e5022b26448eefd419988ada2aec01d3c1162d84a0ea8f21f2c"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy___core__src__highway__LICENSE",
+        "sha256": "e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy___core__src__npysort__x86-simd-sort__LICENSE.md",
+        "sha256": "211e7d737d6179a08f791ebb0a99897ce7cd2457410c542876d125576edfe910"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy___core__src__common__pythoncapi-compat__COPYING",
+        "sha256": "3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy___core__src__umath__svml__LICENSE",
+        "sha256": "c17011467b4fe6e20fbfbeda4df09e58c2bca5480a063e55735a4000a379aad9"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy___core__include__numpy__libdivide__LICENSE.txt",
+        "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy__fft__pocketfft__LICENSE.md",
+        "sha256": "a85ca13fdf90160b64a0698215868c13b74d835ad0a4e2ba44713b8c5058a056"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy__random__src__sfc64__LICENSE.md",
+        "sha256": "9d4098846018319cd68e228ee6220361787f73bccbf00237a85e4fc9621b998f"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy__random__src__mt19937__LICENSE.md",
+        "sha256": "0e111337b25494a773106695f0e799f642b8567aaacca4f116a74a8177179156"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy__random__src__pcg64__LICENSE.md",
+        "sha256": "e7d4f4fb20358f314210a892ae17351e04993813646f697ec387385ca2a36918"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy__random__src__splitmix64__LICENSE.md",
+        "sha256": "268b0ca06759d31ea3ca68dd35f20e877916e927b1c2a835e4592a3c4354b1f9"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy__random__src__distributions__LICENSE.md",
+        "sha256": "469778be8f33d54e1bcaab28c281cc472916d2d273f835e55bc487d30503face"
+      },
+      {
+        "file": "docs/licenses/numpy-2.5.3.dist-info__licenses__numpy__random__src__philox__LICENSE.md",
+        "sha256": "6f5828a57223d4cc7f8ea505a2623e7b978b242752c1515e355f46ba2cec1800"
+      }
+    ]
+  },
+  {
+    "name": "onnxruntime",
+    "version": "1.30.0",
+    "license": "MIT License",
+    "license_files": []
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "license": "Apache-2.0 OR BSD-2-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/packaging-26.3.dist-info__licenses__LICENSE",
+        "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+      },
+      {
+        "file": "docs/licenses/packaging-26.3.dist-info__licenses__LICENSE.BSD",
+        "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+      },
+      {
+        "file": "docs/licenses/packaging-26.3.dist-info__licenses__LICENSE.APACHE",
+        "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+      }
+    ]
+  },
+  {
+    "name": "pillow",
+    "version": "12.3.0",
+    "license": "MIT-CMU",
+    "license_files": [
+      {
+        "file": "docs/licenses/pillow-12.3.0.dist-info__licenses__LICENSE",
+        "sha256": "dda12a98c1979cf3d94df1cff45d27a4cb3f04a60c76f76902ac54cac03ec0ce"
+      }
+    ]
+  },
+  {
+    "name": "pluggy",
+    "version": "1.6.0",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/pluggy-1.6.0.dist-info__licenses__LICENSE",
+        "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+      }
+    ]
+  },
+  {
+    "name": "protobuf",
+    "version": "7.36.2",
+    "license": "3-Clause BSD License",
+    "license_files": [
+      {
+        "file": "docs/licenses/protobuf-7.36.2.dist-info__LICENSE",
+        "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d"
+      }
+    ]
+  },
+  {
+    "name": "pycparser",
+    "version": "3.0",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/pycparser-3.0.dist-info__licenses__LICENSE",
+        "sha256": "0c846399369ea76ddd7b5c44fe6d16497415fcf015f5cbb508c24bf98b81c5b1"
+      }
+    ]
+  },
+  {
+    "name": "pycryptodomex",
+    "version": "3.23.0",
+    "license": "BSD, Public Domain",
+    "license_files": [
+      {
+        "file": "docs/licenses/pycryptodomex-3.23.0.dist-info__LICENSE.rst",
+        "sha256": "4e04660d77c1c64e89d79537919fb8240fa21484a7e3db29f358b2c7f84ea073"
+      }
+    ]
+  },
+  {
+    "name": "pydantic",
+    "version": "2.13.5",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/pydantic-2.13.5.dist-info__licenses__LICENSE",
+        "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+      }
+    ]
+  },
+  {
+    "name": "pydantic_core",
+    "version": "2.46.5",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/pydantic_core-2.46.5.dist-info__licenses__LICENSE",
+        "sha256": "2afdd30d54b4d62b6f488a6bcc1546e84ec5061f13f4209c03d012348783795a"
+      }
+    ]
+  },
+  {
+    "name": "pydantic-settings",
+    "version": "2.15.0",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/pydantic_settings-2.15.0.dist-info__licenses__LICENSE",
+        "sha256": "eb355a753e020346d33d83bf9769135b89fc610568ac531a01c295bcee7fd998"
+      }
+    ]
+  },
+  {
+    "name": "Pygments",
+    "version": "2.21.0",
+    "license": "BSD-2-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/pygments-2.21.0.dist-info__licenses__LICENSE",
+        "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+      }
+    ]
+  },
+  {
+    "name": "PyJWT",
+    "version": "2.14.0",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/pyjwt-2.14.0.dist-info__licenses__LICENSE",
+        "sha256": "797a7a20231d4c433e9f1911db1731d06b5828b98f499819a034f7c0f56f5ce5"
+      }
+    ]
+  },
+  {
+    "name": "pytest",
+    "version": "9.1.1",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/pytest-9.1.1.dist-info__licenses__LICENSE",
+        "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+      }
+    ]
+  },
+  {
+    "name": "pytest-asyncio",
+    "version": "1.4.0",
+    "license": "Apache-2.0",
+    "license_files": [
+      {
+        "file": "docs/licenses/pytest_asyncio-1.4.0.dist-info__licenses__LICENSE",
+        "sha256": "a8ad31b1c3f40dca5a84119351b8fa8ddc868edd77fad8a8ebf6d8f2d16fa4ae"
+      }
+    ]
+  },
+  {
+    "name": "python-dotenv",
+    "version": "1.2.3",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/python_dotenv-1.2.3.dist-info__licenses__LICENSE",
+        "sha256": "80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9"
+      }
+    ]
+  },
+  {
+    "name": "python-multipart",
+    "version": "0.0.32",
+    "license": "Apache-2.0",
+    "license_files": [
+      {
+        "file": "docs/licenses/python_multipart-0.0.32.dist-info__licenses__LICENSE.txt",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ]
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0.3",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/pyyaml-6.0.3.dist-info__licenses__LICENSE",
+        "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+      }
+    ]
+  },
+  {
+    "name": "referencing",
+    "version": "0.37.0",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/referencing-0.37.0.dist-info__licenses__COPYING",
+        "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+      }
+    ]
+  },
+  {
+    "name": "requests",
+    "version": "2.34.2",
+    "license": "Apache-2.0",
+    "license_files": [
+      {
+        "file": "docs/licenses/requests-2.34.2.dist-info__licenses__LICENSE",
+        "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+      }
+    ]
+  },
+  {
+    "name": "rpds-py",
+    "version": "2026.6.3",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/rpds_py-2026.6.3.dist-info__licenses__LICENSE",
+        "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909"
+      }
+    ]
+  },
+  {
+    "name": "ruff",
+    "version": "0.16.8",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/ruff-0.16.8.dist-info__licenses__LICENSE",
+        "sha256": "2597d854122b77ddc71971564ca2350a37608575ce324adc5650a2b2051c8f18"
+      }
+    ]
+  },
+  {
+    "name": "sse-starlette",
+    "version": "3.4.11",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/sse_starlette-3.4.11.dist-info__licenses__LICENSE",
+        "sha256": "80af6bfccbebd2c14d4aab96695cab9950e177190cc80f5ef819e99996883e8e"
+      }
+    ]
+  },
+  {
+    "name": "starlette",
+    "version": "1.6.0",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/starlette-1.6.0.dist-info__licenses__LICENSE.md",
+        "sha256": "dcb95677a02240243187e964f941847d19b17821cf99e5afae684fab328c19bf"
+      }
+    ]
+  },
+  {
+    "name": "tokenizers",
+    "version": "0.23.2",
+    "license": null,
+    "license_files": []
+  },
+  {
+    "name": "tqdm",
+    "version": "4.70.1",
+    "license": "MPL-2.0 AND MIT",
+    "license_files": []
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license": "PSF-2.0",
+    "license_files": [
+      {
+        "file": "docs/licenses/typing_extensions-4.16.0.dist-info__licenses__LICENSE",
+        "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+      }
+    ]
+  },
+  {
+    "name": "typing-inspection",
+    "version": "0.4.4",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/typing_inspection-0.4.4.dist-info__licenses__LICENSE",
+        "sha256": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
+      }
+    ]
+  },
+  {
+    "name": "urllib3",
+    "version": "2.8.0",
+    "license": "MIT",
+    "license_files": [
+      {
+        "file": "docs/licenses/urllib3-2.8.0.dist-info__licenses__LICENSE.txt",
+        "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+      }
+    ]
+  },
+  {
+    "name": "uvicorn",
+    "version": "0.53.0",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/uvicorn-0.53.0.dist-info__licenses__LICENSE.md",
+        "sha256": "efe1acf3e62fb99c288b0ec73e5a773b7268ef4320fe757ea994214e4b63c371"
+      }
+    ]
+  },
+  {
+    "name": "video-ingest",
+    "version": "0.1.0",
+    "license": null,
+    "license_files": []
+  },
+  {
+    "name": "websockets",
+    "version": "17.1",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      {
+        "file": "docs/licenses/websockets-17.1.dist-info__licenses__LICENSE",
+        "sha256": "3d6a0c050d8bec52fabad502e45fb25bd02bcadbd70dea34d447b6a0ff4e6da8"
+      }
+    ]
+  },
+  {
+    "name": "yt-dlp",
+    "version": "2026.8.19",
+    "license": "Unlicense",
+    "license_files": [
+      {
+        "file": "docs/licenses/yt_dlp-2026.8.19.dist-info__licenses__LICENSE",
+        "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+      }
+    ]
+  },
+  {
+    "name": "yt-dlp-ejs",
+    "version": "0.8.0",
+    "license": "Unlicense AND MIT AND ISC",
+    "license_files": [
+      {
+        "file": "docs/licenses/yt_dlp_ejs-0.8.0.dist-info__licenses__LICENSE",
+        "sha256": "b5065838cbac452dfc855ba6e6e031481ad2c68406f70d21ead9321374653e6c"
+      }
+    ]
+  }
+]

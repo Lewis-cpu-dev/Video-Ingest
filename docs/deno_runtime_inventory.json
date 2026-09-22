@@ -1,0 +1,11 @@
+{
+  "version": "2.9.7",
+  "release_url": "https://github.com/denoland/deno/releases/tag/v2.9.7",
+  "archive_url": "https://github.com/denoland/deno/releases/download/v2.9.7/deno-x86_64-unknown-linux-gnu.zip",
+  "archive_sha256": "c6527f24f4b16031d3ae4fa9f658d5f11534c8d84ce7dc8502420280919c3490",
+  "binary_sha256": "ce6a052beb97c2b92de67077e3f3924ba7c9661ede0d8dc2f66a116a3c841f21",
+  "license": "MIT",
+  "license_sha256": "f62497fffecc0852960c8d3e6934b9db86d16396e9b604072e923892cae3a588",
+  "local_executable": ".tools/deno-2.9.7/deno",
+  "verified_against": "Pinned digests reviewed against first-party immutable GitHub release API"
+}

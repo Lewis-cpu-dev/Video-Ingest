@@ -1,0 +1,49 @@
+{
+  "run_id": "e309db7bb5e84f4dc26c4cf9",
+  "created_at": "2026-09-21T23:30:47.373399+00:00",
+  "scope": "backend smoke; target ChatGPT host not exercised",
+  "network_region": "unrecorded",
+  "credentials": "none",
+  "versions": {
+    "mcp": "1.30.0",
+    "yt-dlp": "2026.8.19",
+    "Pillow": "12.3.0"
+  },
+  "requested": {
+    "captions": false,
+    "media": true
+  },
+  "samples": [
+    {
+      "id": "CLI-01",
+      "canonical_source": {
+        "platform": "youtube",
+        "canonical_url": "https://www.youtube.com/watch?v=YE7VzlLtp-4",
+        "source_id": "YE7VzlLtp-4",
+        "part_id": "1",
+        "focus_timestamp_ms": null
+      },
+      "status": "partial",
+      "steps": {
+        "metadata": {
+          "status": "passed",
+          "duration_ms": 597000,
+          "caption_track_count": 30,
+          "media_available": true,
+          "warnings": [
+            "CAPTION_CONTENT_UNVERIFIED"
+          ]
+        }
+      },
+      "errors": [],
+      "host_consumption": "not_tested",
+      "download_bytes": 33556144,
+      "error": {
+        "code": "BUDGET_EXCEEDED",
+        "stage": "downloading",
+        "retryable": false,
+        "next_action": "correct_request"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "archive": "dist/video-ingest-plugin-0.1.0.zip",
+  "sha256": "68b5876ccd2b9db8534a2764db8b7b39bcff2d9794231445363e68e5b43462e0",
+  "version": "0.1.0",
+  "scope": "private workspace-backed Codex plugin",
+  "installed": false
+}

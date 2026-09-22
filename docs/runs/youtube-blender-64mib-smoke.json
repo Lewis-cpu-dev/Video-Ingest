@@ -1,0 +1,67 @@
+{
+  "run_id": "e385b84ccc8123cf3f78db9c",
+  "created_at": "2026-09-21T23:32:03.460736+00:00",
+  "scope": "backend smoke; target ChatGPT host not exercised",
+  "network_region": "unrecorded",
+  "credentials": "none",
+  "versions": {
+    "mcp": "1.30.0",
+    "yt-dlp": "2026.8.19",
+    "Pillow": "12.3.0"
+  },
+  "requested": {
+    "captions": true,
+    "media": true
+  },
+  "samples": [
+    {
+      "id": "CLI-01",
+      "canonical_source": {
+        "platform": "youtube",
+        "canonical_url": "https://www.youtube.com/watch?v=YE7VzlLtp-4",
+        "source_id": "YE7VzlLtp-4",
+        "part_id": "1",
+        "focus_timestamp_ms": null
+      },
+      "status": "requested_backend_steps_passed",
+      "steps": {
+        "metadata": {
+          "status": "passed",
+          "duration_ms": 597000,
+          "caption_track_count": 30,
+          "media_available": true,
+          "warnings": [
+            "CAPTION_CONTENT_UNVERIFIED"
+          ]
+        },
+        "captions": {
+          "status": "passed",
+          "segments": 6,
+          "language": "en",
+          "sha256": "ce738ffd71bb300611f40ff0d614bb524d6ba038e17b30419c9cfc3caccfcbd8",
+          "provenance": [
+            "human_caption"
+          ]
+        },
+        "media": {
+          "status": "passed",
+          "bytes": 46207015,
+          "sha256": "e741e75171cb499f5e132f9969e69df550a85f84dd9f14eb0fb68fc8465b087f",
+          "duration_ms": 596501
+        },
+        "image_delivery": {
+          "status": "local_protocol_passed",
+          "images": 1,
+          "content_types": [
+            "text",
+            "image"
+          ],
+          "host_perception": "not_tested"
+        }
+      },
+      "errors": [],
+      "host_consumption": "not_tested",
+      "download_bytes": 46534801
+    }
+  ]
+}

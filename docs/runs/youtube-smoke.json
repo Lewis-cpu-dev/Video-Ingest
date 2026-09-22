@@ -1,0 +1,55 @@
+{
+  "run_id": "61b9a9cceeffde02340ed123",
+  "created_at": "2026-09-21T23:29:28.372285+00:00",
+  "scope": "backend smoke; target ChatGPT host not exercised",
+  "network_region": "unrecorded",
+  "credentials": "none",
+  "versions": {
+    "mcp": "1.30.0",
+    "yt-dlp": "2026.8.19",
+    "Pillow": "12.3.0"
+  },
+  "requested": {
+    "captions": true,
+    "media": true
+  },
+  "samples": [
+    {
+      "id": "CLI-01",
+      "canonical_source": {
+        "platform": "youtube",
+        "canonical_url": "https://www.youtube.com/watch?v=BaW_jenozKc",
+        "source_id": "BaW_jenozKc",
+        "part_id": "1",
+        "focus_timestamp_ms": null
+      },
+      "status": "partial",
+      "steps": {
+        "metadata": {
+          "status": "passed",
+          "duration_ms": null,
+          "caption_track_count": 0,
+          "media_available": false
+        },
+        "captions": {
+          "status": "failed",
+          "code": "NO_CAPTIONS"
+        }
+      },
+      "errors": [
+        {
+          "code": "NO_CAPTIONS",
+          "stage": "fetching_captions"
+        }
+      ],
+      "host_consumption": "not_tested",
+      "download_bytes": 107982,
+      "error": {
+        "code": "MEDIA_UNAVAILABLE",
+        "stage": "downloading",
+        "retryable": false,
+        "next_action": "check_source_or_deployment"
+      }
+    }
+  ]
+}

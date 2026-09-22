@@ -1,0 +1,16 @@
+.venv/
+.cache/
+.tmp/
+.runtime/
+.tools/
+.models/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+plugin/.mcp.json
+dist/
+*.egg-info/

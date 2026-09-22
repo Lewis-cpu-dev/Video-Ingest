@@ -1,0 +1,84 @@
+{
+  "$defs": {
+    "TimeRange": {
+      "additionalProperties": false,
+      "properties": {
+        "start_ms": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Start Ms",
+          "type": "integer"
+        },
+        "end_ms": {
+          "exclusiveMinimum": 0,
+          "title": "End Ms",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "end_ms"
+      ],
+      "title": "TimeRange",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "need": {
+      "items": {
+        "enum": [
+          "transcript",
+          "visual_index",
+          "audio",
+          "video",
+          "clip"
+        ],
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Need",
+      "type": "array"
+    },
+    "time_range": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TimeRange"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "language": {
+      "anyOf": [
+        {
+          "maxLength": 32,
+          "pattern": "^[a-zA-Z0-9_-]+$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Language"
+    },
+    "quality": {
+      "default": "overview",
+      "enum": [
+        "overview",
+        "detail"
+      ],
+      "title": "Quality",
+      "type": "string"
+    }
+  },
+  "required": [
+    "need"
+  ],
+  "title": "PrepareRequest",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://video-ingest.invalid/schemas/1.0/PrepareRequest.json"
+}

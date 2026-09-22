@@ -1,0 +1,64 @@
+{
+  "run_id": "5fefa7cff8615c6574e4d262",
+  "created_at": "2026-09-21T23:19:37.041983+00:00",
+  "scope": "backend smoke; target ChatGPT host not exercised",
+  "network_region": "unrecorded",
+  "credentials": "none",
+  "versions": {
+    "mcp": "1.30.0",
+    "yt-dlp": "2026.8.19",
+    "Pillow": "12.3.0"
+  },
+  "requested": {
+    "captions": true,
+    "media": true
+  },
+  "samples": [
+    {
+      "id": "CLI-01",
+      "canonical_source": {
+        "platform": "bilibili",
+        "canonical_url": "https://www.bilibili.com/video/BV1eZdzBGEvE?p=1",
+        "source_id": "BV1eZdzBGEvE",
+        "part_id": "1",
+        "focus_timestamp_ms": null
+      },
+      "status": "partial",
+      "steps": {
+        "metadata": {
+          "status": "passed",
+          "duration_ms": 312032,
+          "caption_track_count": 0,
+          "media_available": true
+        },
+        "captions": {
+          "status": "failed",
+          "code": "NO_CAPTIONS"
+        },
+        "media": {
+          "status": "passed",
+          "bytes": 13166230,
+          "sha256": "47fc976ff818b80ed1bc375f918b3b92ad4e4a0df47b5a0629f3eb07120db648",
+          "duration_ms": 312032
+        },
+        "image_delivery": {
+          "status": "local_protocol_passed",
+          "images": 1,
+          "content_types": [
+            "text",
+            "image"
+          ],
+          "host_perception": "not_tested"
+        }
+      },
+      "errors": [
+        {
+          "code": "NO_CAPTIONS",
+          "stage": "fetching_captions"
+        }
+      ],
+      "host_consumption": "not_tested",
+      "download_bytes": 13332456
+    }
+  ]
+}

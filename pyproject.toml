@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "video-ingest"
+version = "0.1.0"
+description = "Private MCP video evidence ingestion service"
+requires-python = ">=3.11"
+dependencies = ["mcp>=1.26,<2", "pydantic>=2.11,<3", "yt-dlp[default]>=2025.12.8", "Pillow>=11,<13", "httpx>=0.28,<1", "uvicorn>=0.34,<1"]
+
+[project.optional-dependencies]
+asr = ["faster-whisper>=1.2,<2"]
+
+[dependency-groups]
+dev = ["pytest>=8.3,<10", "pytest-asyncio>=1,<2", "ruff>=0.12,<1"]
+
+[project.scripts]
+video-ingest = "server.main:main"
+video-ingest-probe = "server.probe:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["server"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "--basetemp=.tmp/pytest"
+markers = ["network: opt-in live platform tests", "asr: requires provisioned local model"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"

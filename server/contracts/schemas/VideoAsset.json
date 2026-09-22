@@ -1,0 +1,183 @@
+{
+  "$defs": {
+    "ClientProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "default": "unverified",
+          "title": "Name",
+          "type": "string"
+        },
+        "text": {
+          "default": true,
+          "title": "Text",
+          "type": "boolean"
+        },
+        "images": {
+          "default": true,
+          "title": "Images",
+          "type": "boolean"
+        },
+        "file_resources": {
+          "default": false,
+          "title": "File Resources",
+          "type": "boolean"
+        },
+        "native_audio": {
+          "default": false,
+          "title": "Native Audio",
+          "type": "boolean"
+        },
+        "native_video": {
+          "default": false,
+          "title": "Native Video",
+          "type": "boolean"
+        },
+        "verification": {
+          "default": "unverified",
+          "enum": [
+            "unverified",
+            "local_protocol",
+            "host_verified"
+          ],
+          "title": "Verification",
+          "type": "string"
+        }
+      },
+      "title": "ClientProfile",
+      "type": "object"
+    },
+    "VideoSource": {
+      "additionalProperties": false,
+      "properties": {
+        "platform": {
+          "enum": [
+            "youtube",
+            "bilibili"
+          ],
+          "title": "Platform",
+          "type": "string"
+        },
+        "canonical_url": {
+          "title": "Canonical Url",
+          "type": "string"
+        },
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "part_id": {
+          "default": "1",
+          "title": "Part Id",
+          "type": "string"
+        },
+        "focus_timestamp_ms": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Focus Timestamp Ms"
+        }
+      },
+      "required": [
+        "platform",
+        "canonical_url",
+        "source_id"
+      ],
+      "title": "VideoSource",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "asset_id": {
+      "title": "Asset Id",
+      "type": "string"
+    },
+    "asset_revision": {
+      "default": "r1",
+      "title": "Asset Revision",
+      "type": "string"
+    },
+    "source": {
+      "$ref": "#/$defs/VideoSource"
+    },
+    "duration_ms": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Duration Ms"
+    },
+    "expires_at": {
+      "title": "Expires At",
+      "type": "number"
+    },
+    "metadata": {
+      "additionalProperties": true,
+      "title": "Metadata",
+      "type": "object"
+    },
+    "capabilities": {
+      "additionalProperties": true,
+      "title": "Capabilities",
+      "type": "object"
+    },
+    "artifacts": {
+      "additionalProperties": true,
+      "title": "Artifacts",
+      "type": "object"
+    },
+    "timebase": {
+      "const": "source_presentation_ms",
+      "default": "source_presentation_ms",
+      "title": "Timebase",
+      "type": "string"
+    },
+    "coverage": {
+      "additionalProperties": true,
+      "title": "Coverage",
+      "type": "object"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "usage": {
+      "additionalProperties": true,
+      "title": "Usage",
+      "type": "object"
+    },
+    "client_profile": {
+      "$ref": "#/$defs/ClientProfile"
+    }
+  },
+  "required": [
+    "asset_id",
+    "source",
+    "expires_at"
+  ],
+  "title": "VideoAsset",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://video-ingest.invalid/schemas/1.0/VideoAsset.json"
+}
