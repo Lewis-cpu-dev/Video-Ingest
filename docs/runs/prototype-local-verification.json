@@ -1,35 +1,35 @@
 {
-  "recorded_at": "2026-09-22T04:57:29.824850+00:00",
+  "recorded_at": "2026-09-22T15:31:24.997834+00:00",
   "status": "passed",
   "transports": {
     "stdio": {
       "status": "passed",
       "text_characters": 24,
-      "text_sha256": "642e46715145687da678a7906e5893d2868af079edec19bd423773f2744f73fd",
+      "text_sha256": "2ff4175e208172b976edc5f08e3d9e58b94c3ab959598a219f34a9dff1244e87",
       "images": [
         {
-          "bytes": 8752,
-          "sha256": "0a1a234617c8b591da808595e44a30783440e7949a348b6550b5635d06a7aa3a",
+          "bytes": 7054,
+          "sha256": "9615652847e9083a8199db055d96a70759979e81eb2a14c7f29ebace8709e4b1",
           "width": 640,
           "height": 200,
           "timestamp_ms": 1250,
-          "received_file": ".runtime/prototype-verification/dd2f9930af742d20/stdio/received/frame_0.png"
+          "received_file": ".runtime/prototype-verification/e2e11a16b3176980/stdio/received/frame_0.png"
         },
         {
-          "bytes": 7881,
-          "sha256": "8f00068bf405114d3cd89121a306d35b082d7555a98c6d2452bffee5add67c87",
+          "bytes": 5081,
+          "sha256": "6210e874a8b587ef71b94f758cdc14f30a92efe25888b074385217b2237e68cb",
           "width": 640,
           "height": 200,
           "timestamp_ms": 7600,
-          "received_file": ".runtime/prototype-verification/dd2f9930af742d20/stdio/received/frame_1.png"
+          "received_file": ".runtime/prototype-verification/e2e11a16b3176980/stdio/received/frame_1.png"
         },
         {
-          "bytes": 7576,
-          "sha256": "64756f9f8c8e7ce77539797a8b0439177b92b1b4fae61fb78cd0cee6dbbabe00",
+          "bytes": 6416,
+          "sha256": "f71a62526df782dbb59874cba1e255a1c61dfb07558cc78200cac853bb3588d8",
           "width": 640,
           "height": 200,
           "timestamp_ms": 18250,
-          "received_file": ".runtime/prototype-verification/dd2f9930af742d20/stdio/received/frame_2.png"
+          "received_file": ".runtime/prototype-verification/e2e11a16b3176980/stdio/received/frame_2.png"
         }
       ],
       "image_answers_absent_from_text": true,
@@ -38,31 +38,31 @@
     "http_loopback": {
       "status": "passed",
       "text_characters": 24,
-      "text_sha256": "f16be3854ac0e64e80d0fde914c9090b2706ae45c1c9aa4d362b9805f11c1de3",
+      "text_sha256": "3a46eceb3fb5924492115293cb2e2e1a60766cd7319019e656d0e3bd4233be2b",
       "images": [
         {
-          "bytes": 8090,
-          "sha256": "b7fc346d7d42c39d27ee5f0b3a550ee5410bcac4ba6f1b63fa4790e64c867d05",
+          "bytes": 7556,
+          "sha256": "77cd28bce525e0ca68918ffc24b6195c814deed3b3a933d0749012835ad781db",
           "width": 640,
           "height": 200,
           "timestamp_ms": 1250,
-          "received_file": ".runtime/prototype-verification/dd2f9930af742d20/http/received/frame_0.png"
+          "received_file": ".runtime/prototype-verification/e2e11a16b3176980/http/received/frame_0.png"
         },
         {
-          "bytes": 8380,
-          "sha256": "1a10940207bf61148cf25e07c0de075bce51030f8947b9a27669fc20f731b317",
+          "bytes": 7805,
+          "sha256": "a21e92a660032c5cc78d9b9178534c885054445dae2b06be996b27b67825cef6",
           "width": 640,
           "height": 200,
           "timestamp_ms": 7600,
-          "received_file": ".runtime/prototype-verification/dd2f9930af742d20/http/received/frame_1.png"
+          "received_file": ".runtime/prototype-verification/e2e11a16b3176980/http/received/frame_1.png"
         },
         {
-          "bytes": 7660,
-          "sha256": "16c5ff00150f11b13463a10dffa4fbe32c2a083e2879ed14c718c53b13894ab8",
+          "bytes": 7416,
+          "sha256": "8811bcd4485ac0cfbea7f90feb78a74d063f3c444b7651542b92f63a82f3573c",
           "width": 640,
           "height": 200,
           "timestamp_ms": 18250,
-          "received_file": ".runtime/prototype-verification/dd2f9930af742d20/http/received/frame_2.png"
+          "received_file": ".runtime/prototype-verification/e2e11a16b3176980/http/received/frame_2.png"
         }
       ],
       "image_answers_absent_from_text": true,

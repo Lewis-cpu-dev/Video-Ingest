@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-09-22T04:58:07.633139+00:00",
+  "recorded_at": "2026-09-22T18:29:43.721923+00:00",
   "status": "passed",
   "checks": [
     "stdio MCP from another working directory",

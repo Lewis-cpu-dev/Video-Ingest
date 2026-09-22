@@ -64,6 +64,7 @@ Answer JSON shapes are exact, with array order preserved:
 ```bash
 .venv/bin/python scripts/record_host_probe.py \
   --probe-id probe_REPLACE_WITH_ACTUAL_ID \
+  --connection secure-mcp-tunnel \
   --host 'ChatGPT web' --host-version 'record actual version/date' \
   --model 'record actual model' --account-mode 'record actual account/mode' \
   --evidence docs/runs/host/captured-response.txt \

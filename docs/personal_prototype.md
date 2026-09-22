@@ -2,7 +2,10 @@
 
 本阶段复用 `/home/fqtuser/Video_ingest` 所在的 Linux 开发环境，不购买服务器或域名，
 不开发多人服务。当前代码使用 Linux 的进程锁与资源限制；已有环境即可进行本地开发和测试，
-无需另建 Linux 云服务器。账号套餐、工作区类型和可用连接入口由用户确认后再记录。
+无需另建 Linux 云服务器。
+
+部署前记录实际账号的套餐、工作区、开发者模式入口、Tunnel 权限和测试模型。
+个人自用不等于个人工作区；开发者模式不构成远端可达或图片读取通过的证据。
 
 ## 第一步：服务确实返回文字和图片
 
@@ -23,8 +26,8 @@ cd /home/fqtuser/Video_ingest
 
 ## 第二步：真实账号的网页版 ChatGPT 确实读取
 
-先记录用户实际套餐、个人或组织工作区、可用的开发者/MCP 连接入口以及所选模型。
-按该账号实际支持的连接方式配置，再执行以下测试。现阶段不预设账号具备某种入口，
+先核对实际账号、工作区、开发者模式、创建页的连接方式以及所选模型。
+按该账号实际支持的连接方式配置，再执行以下测试。现阶段不预设账号具备 Tunnel 权限，
 不把购买服务器或域名作为连接前提。
 
 如果确认的连接方式需要本机 HTTP 探针，可在工作目录运行：
@@ -38,6 +41,31 @@ cd /home/fqtuser/Video_ingest
 探针自身没有 HTTP 身份认证，因此保持本机监听；实际连接方案必须保持私有访问。
 如果账号支持的方式采用 stdio，对应命令为 `.venv/bin/python -m server.probe`，
 工作目录必须是本仓库。两种启动方式择一，不要求同时运行。
+
+若客户端不能指定工作目录，使用绝对路径启动器：
+`/home/fqtuser/Video_ingest/.venv/bin/python /home/fqtuser/Video_ingest/scripts/run_probe.py`。
+启动器也接受 `--transport`、`--port` 和 `--data-dir`；使用自定义数据目录时，记录器必须传入相同的 `--data-dir`。
+
+### 私有连接候选：Secure MCP Tunnel
+
+2026-09-22 核对的[官方文档](https://developers.openai.com/api/docs/guides/secure-mcp-tunnels)
+支持通过出站连接转发本地 stdio MCP，无需开放公网端口。使用前需确认账号有开发者入口、
+Tunnel 权限及目标工作区关联，并在运行环境私下配置运行密钥；不要把密钥发到聊天或写入仓库。
+仓库不会自动安装客户端、创建隧道或启动连接。
+
+账号具备条件且已按官方说明安装客户端后，在仓库根目录执行：
+
+```bash
+.venv/bin/python scripts/configure_tunnel.py --tunnel-id tunnel_YOUR_ID --target probe
+```
+
+如客户端不在 PATH，追加 `--client /absolute/path/to/tunnel-client`。
+脚本仅在忽略目录 `.runtime/tunnel/probe/` 创建本机配置，不保存密钥、不连接远端。
+私下设置 `CONTROL_PLANE_API_KEY` 后执行脚本打印的 `doctor` 和 `run` 命令。
+
+再在 ChatGPT 创建开发者应用时选择 Tunnel 并选择对应隧道。以上为候选配置，尚未实测；
+若账号没有该入口，应记录实际可选方式，再选择支持其认证的私有 HTTPS 网关。
+先只连接独立探针，通过后再连接视频后端。
 
 连接完成后，在**网页版 ChatGPT 的实际会话**中分别发送：
 
@@ -65,11 +93,15 @@ mkdir -p .runtime/host-validation
 # 先保存真实会话证据和答案；下面的占位值必须替换为实际值。
 .venv/bin/python scripts/record_host_probe.py \
   --probe-id probe_REPLACE_WITH_ACTUAL_ID \
+  --connection secure-mcp-tunnel \
   --host 'ChatGPT web' --host-version '实际版本或测试日期' \
   --model '实际模型' --account-mode '实际套餐及工作区类型，不含账号标识' \
   --evidence .runtime/host-validation/captured-response.txt \
   --answer-json .runtime/host-validation/answer.json
 ```
+
+`--connection` 必须填写实际方式：`secure-mcp-tunnel`、`private-https-gateway`、
+`local-stdio` 或 `local-http`；后两者不能作为网页版验收。
 
 记录器将实际回答与私有真值比较，并写入 `docs/runs/host/<probe_id>.json`，包含答案、
 客户端信息和证据校验值。该报告目录会进入 Git，提交前只保留适合公开的测试信息；
@@ -81,7 +113,7 @@ mkdir -p .runtime/host-validation
 
 | 类别 | 当前判断与下一步 |
 |---|---|
-| 账号权限 | 待用户提供实际套餐、工作区及连接入口；尚不能判定支持或不支持。 |
+| 账号权限 | 按实际账号核对开发者模式与 Tunnel 权限；未连接时不能判定模型读取是否可用。 |
 | 网络连接 | 本机传输由第一步检查；ChatGPT 到当前环境的连接需选定方式后实测。回环地址本身不代表远端可达。 |
 | 运行环境 | 复用当前 Linux；以第一步生成的报告为准。若启动失败，记录具体依赖或进程错误。 |
 | 媒体交付 | 本地 PNG 返回与模型视觉读取分别记录；只有真实会话测试才能判断模型是否收到并读懂图片。 |

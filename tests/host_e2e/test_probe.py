@@ -4,6 +4,8 @@ import base64
 import io
 import json
 import os
+import subprocess
+import sys
 
 import pytest
 from mcp import ClientSession, StdioServerParameters
@@ -11,6 +13,7 @@ from mcp.client.stdio import stdio_client
 from mcp.types import CallToolResult
 from PIL import Image
 
+from scripts.record_host_probe import exact_answer
 from server.config import PROJECT_ROOT
 from server.probe import ProbeStore, create_probe_server
 
@@ -78,6 +81,64 @@ async def test_real_stdio_mcp_roundtrip():
         pictures = await session.call_tool("probe_images", {})
         assert len([c for c in pictures.content if c.type == "image"]) == 3
         assert pictures.structuredContent["host_test_status"] == "awaiting_operator_verification"
+
+
+@pytest.mark.asyncio
+async def test_probe_launcher_from_unrelated_directory(tmp_path):
+    parameters = StdioServerParameters(
+        command=sys.executable,
+        args=[str(PROJECT_ROOT / "scripts/run_probe.py"), "--data-dir", str(tmp_path / "probes")],
+        cwd="/tmp",
+    )
+    async with stdio_client(parameters) as (read, write), ClientSession(read, write) as session:
+        await session.initialize()
+        result = await session.call_tool("probe_images", {})
+        assert not result.isError
+        assert sum(c.type == "image" for c in result.content) == 3
+        assert (tmp_path / "probes" / result.structuredContent["probe_id"] /
+                "private_ground_truth.json").is_file()
+
+
+@pytest.mark.parametrize("answer", [
+    {"timestamps_ms": [True]}, {"timestamps_ms": [1.0]},
+    {"timestamps_ms": ["1"]}, {"timestamps_ms": [1], "extra": None},
+])
+def test_host_answers_require_exact_json_types_and_keys(answer):
+    assert not exact_answer(answer, {"timestamps_ms": [1]})
+
+
+def test_record_custom_probe_directory_and_connection(tmp_path):
+    store = ProbeStore(tmp_path / "probes")
+    probe_id, _ = store.create("text", {"text": "test-fixture-only"})
+    evidence = tmp_path / "evidence.txt"
+    evidence.write_text("Synthetic recorder regression fixture; not real host evidence.")
+    answer = tmp_path / "answer.json"
+    answer.write_text(json.dumps({"text": "test-fixture-only"}))
+    command = [sys.executable, str(PROJECT_ROOT / "scripts/record_host_probe.py"),
+               "--probe-id", probe_id, "--host", "synthetic-test", "--host-version", "test",
+               "--model", "test", "--account-mode", "test", "--connection", "local-stdio",
+               "--data-dir", str(tmp_path / "probes"), "--evidence", str(evidence)]
+    output = PROJECT_ROOT / "docs/runs/host" / f"{probe_id}.json"
+    try:
+        result = subprocess.run(command + ["--answer-json", str(answer)], capture_output=True, timeout=20,
+                                check=False)
+        assert result.returncode == 0, result.stderr.decode()
+        report = json.loads(output.read_text())
+        assert report["status"] == "passed"
+        assert report["connection"] == "local-stdio"
+        assert "truth" not in report
+        output.unlink()
+        result = subprocess.run(command + ["--unsupported"], capture_output=True, timeout=20,
+                                check=False)
+        assert result.returncode == 2
+        assert not output.exists()
+        evidence.write_text("")
+        result = subprocess.run(command + ["--answer-json", str(answer)], capture_output=True, timeout=20,
+                                check=False)
+        assert result.returncode == 2
+        assert not output.exists()
+    finally:
+        output.unlink(missing_ok=True)
 
 
 @pytest.mark.asyncio

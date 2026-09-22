@@ -86,7 +86,7 @@ The checker launches temporary real servers, initializes both MCP transports, ch
 tools and structured errors, verifies that missing HTTP credentials are rejected, and stops the
 servers afterward. It also tests launching from a different working directory. Results are saved
 in `docs/runs/deployment-verification.json`. It performs no platform downloads and does not
-connect to your ChatGPT account. The full provisioned regression suite currently has 179 tests.
+connect to your ChatGPT account. The provisioned regression suite passed 185 tests on 2026-09-22.
 
 The generated `plugin/.mcp.json` contains absolute paths for **this checkout**, is ignored by Git,
 and must be regenerated after moving/cloning the repository. Add `--asr` to
@@ -169,8 +169,15 @@ authentication; public multi-user OAuth is a separate deployment requirement.
 
 ## 8. Connect the ChatGPT browser host and run Gate 0
 
-The browser needs a remote HTTPS MCP endpoint; the GitHub URL and local plugin ZIP are not MCP
-endpoints. To use the backend from ChatGPT:
+For the Tunnel route, follow the [README setup](../README.md#connect-chatgpt-through-secure-mcp-tunnel).
+`scripts/configure_tunnel.py` prepares separate probe/backend profiles with an environment-based
+credential reference and prints the matching launch commands. It does not create a tunnel or start one.
+
+
+The browser needs a supported remote connection. A Secure MCP Tunnel can forward to local
+stdio without public ingress; alternatively use an authenticated HTTPS gateway. The GitHub URL
+and local plugin ZIP are not MCP endpoints. Start with the [private probe connection](personal_prototype.md)
+and confirm account access. The following steps describe the HTTPS gateway route:
 
 1. Complete steps 1–5 and run the HTTP backend from step 7 on your Linux server/workstation.
 2. Configure a private authenticated HTTPS gateway or approved secure tunnel that can reach
