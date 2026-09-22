@@ -215,9 +215,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--transport", choices=["stdio", "streamable-http"], default="stdio")
     parser.add_argument("--port", type=int, default=8766)
+    parser.add_argument("--data-dir", type=Path, help="Probe storage directory inside the workspace")
     args = parser.parse_args()
     os.umask(0o077)
-    create_probe_server(port=args.port).run(transport=args.transport)
+    create_probe_server(root=args.data_dir, port=args.port).run(transport=args.transport)
 
 
 if __name__ == "__main__":

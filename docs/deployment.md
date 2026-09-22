@@ -5,6 +5,10 @@ local stdio and authenticated HTTP startup procedures are checked by
 [`scripts/check_deployment.py`](../scripts/check_deployment.py). Browser ChatGPT still needs a
 reachable, authenticated remote connection and its separate host acceptance tests.
 
+For the current personal prototype, start with [个人自用原型：两步验收](personal_prototype.md).
+Reuse the current Linux checkout; no new server or domain is required for local development and
+testing. Confirm the actual account's connection options before choosing any additional deployment.
+
 ## 1. Install prerequisites and clone
 
 Use **Linux**, Python **3.11 or newer**, Git, [uv](https://docs.astral.sh/uv/getting-started/installation/),

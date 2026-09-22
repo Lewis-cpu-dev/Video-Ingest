@@ -1,0 +1,78 @@
+{
+  "recorded_at": "2026-09-22T04:57:29.824850+00:00",
+  "status": "passed",
+  "transports": {
+    "stdio": {
+      "status": "passed",
+      "text_characters": 24,
+      "text_sha256": "642e46715145687da678a7906e5893d2868af079edec19bd423773f2744f73fd",
+      "images": [
+        {
+          "bytes": 8752,
+          "sha256": "0a1a234617c8b591da808595e44a30783440e7949a348b6550b5635d06a7aa3a",
+          "width": 640,
+          "height": 200,
+          "timestamp_ms": 1250,
+          "received_file": ".runtime/prototype-verification/dd2f9930af742d20/stdio/received/frame_0.png"
+        },
+        {
+          "bytes": 7881,
+          "sha256": "8f00068bf405114d3cd89121a306d35b082d7555a98c6d2452bffee5add67c87",
+          "width": 640,
+          "height": 200,
+          "timestamp_ms": 7600,
+          "received_file": ".runtime/prototype-verification/dd2f9930af742d20/stdio/received/frame_1.png"
+        },
+        {
+          "bytes": 7576,
+          "sha256": "64756f9f8c8e7ce77539797a8b0439177b92b1b4fae61fb78cd0cee6dbbabe00",
+          "width": 640,
+          "height": 200,
+          "timestamp_ms": 18250,
+          "received_file": ".runtime/prototype-verification/dd2f9930af742d20/stdio/received/frame_2.png"
+        }
+      ],
+      "image_answers_absent_from_text": true,
+      "host_consumption_proven": false
+    },
+    "http_loopback": {
+      "status": "passed",
+      "text_characters": 24,
+      "text_sha256": "f16be3854ac0e64e80d0fde914c9090b2706ae45c1c9aa4d362b9805f11c1de3",
+      "images": [
+        {
+          "bytes": 8090,
+          "sha256": "b7fc346d7d42c39d27ee5f0b3a550ee5410bcac4ba6f1b63fa4790e64c867d05",
+          "width": 640,
+          "height": 200,
+          "timestamp_ms": 1250,
+          "received_file": ".runtime/prototype-verification/dd2f9930af742d20/http/received/frame_0.png"
+        },
+        {
+          "bytes": 8380,
+          "sha256": "1a10940207bf61148cf25e07c0de075bce51030f8947b9a27669fc20f731b317",
+          "width": 640,
+          "height": 200,
+          "timestamp_ms": 7600,
+          "received_file": ".runtime/prototype-verification/dd2f9930af742d20/http/received/frame_1.png"
+        },
+        {
+          "bytes": 7660,
+          "sha256": "16c5ff00150f11b13463a10dffa4fbe32c2a083e2879ed14c718c53b13894ab8",
+          "width": 640,
+          "height": 200,
+          "timestamp_ms": 18250,
+          "received_file": ".runtime/prototype-verification/dd2f9930af742d20/http/received/frame_2.png"
+        }
+      ],
+      "image_answers_absent_from_text": true,
+      "host_consumption_proven": false
+    }
+  },
+  "scope": "Local MCP client receives real text and PNG pixels; no OCR or model perception test",
+  "video_download": "not_tested_by_this_check",
+  "chatgpt_web": {
+    "status": "not_tested",
+    "host_consumption_proven": false
+  }
+}

@@ -35,6 +35,9 @@ The client launches the backend automatically. No public endpoint is included.
 ASR, local plugin packaging, authenticated HTTP, ChatGPT connection requirements and troubleshooting.
 Machine-specific `plugin/.mcp.json` is generated locally and excluded from Git.
 
+For the current personal prototype, follow [the two-step local/ChatGPT validation guide (中文)](docs/personal_prototype.md).
+Reuse the existing Linux environment; buying a server or domain is not a prerequisite.
+
 - [Deployment, limits and rollback](docs/deployment.md)
 - [Host Gate 0 procedure and compatibility](docs/compatibility_matrix.md)
 - [Dependency review and license evidence](docs/dependency_review.md)
